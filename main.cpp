@@ -46,12 +46,6 @@ int main(int argc, char **argv) {
     getline(file, line);
     int destination = stoi(line) - 1;
 
-//    for (int i = 0; i < w.size(); ++i) {
-//        for (int j = 0; j < w[i].size(); ++j) {
-//            cout << i + 1 << "- " << w[i][j] << " ->" << j + 1 << endl;
-//        }
-//    }
-
     bool visited[n];
     int min_distance_to[n];
 
@@ -86,14 +80,6 @@ int main(int argc, char **argv) {
             }
         }
     }
-
-//    for (int i = 0; i < n; i++)
-//    {
-//        if (min_distance_to[i] != INT_MAX)
-//            cout << start + 1 << " -> " << i + 1 << " = " << min_distance_to[i] << endl;
-//        else
-//            cout << start + 1 << " -> " << i + 1 << " = " << "-" << endl;
-//    }
 
     if (min_distance_to[destination] == INT_MAX) {
         cout << "N" << endl;
