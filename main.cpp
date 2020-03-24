@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
 
     int n = stoi(line);
 
-    vector<vector<int>> w(n , vector<int> (n));
+    vector<vector<int> > w(n , vector<int> (n));
     for (int i = 0; i < w.size(); ++i) {
         for (int j = 0; j < w[i].size(); ++j) {
             w[i][j] = INT_MAX;
